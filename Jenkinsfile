@@ -18,7 +18,6 @@ Microservice(
         --set resources.limits.memory=520Mi \
         --set probes.readinessProbe.enabled=false \
         --set probes.livenessProbe.enabled=false \
-        --set job.enabled=true \
         --set serviceAccount.name=secret-store",
         commonFlags: "--set image.port=8000 \
         --set cron.enabled=false \

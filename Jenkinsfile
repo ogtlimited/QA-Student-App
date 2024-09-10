@@ -8,7 +8,8 @@ Microservice(
         publiclyAccessible: true,
         namespace: 'ogtl',
         devFlags: "--set autoscaling.enabled=false \
-        --set hostNamePrefix=qa-student \
+        --set volume.secondVolume.enabled=false \
+        --set hostNamePrefix=qastudent-development \
         --set secretObjects.secretName=qastudent-dev \
         --set ingress.enabled=true \
         --set volume.mountPath=/var/www/html/.env \
@@ -18,6 +19,8 @@ Microservice(
         --set resources.limits.memory=520Mi \
         --set probes.readinessProbe.enabled=false \
         --set probes.livenessProbe.enabled=false \
+        --set probes.path=/ \
+        --set PersistentVolumeClaim.enabled=false \
         --set serviceAccount.name=secret-store",
         commonFlags: "--set image.port=8000 \
         --set cron.enabled=false \

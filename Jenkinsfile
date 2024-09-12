@@ -22,7 +22,7 @@ Microservice(
         --set probes.path=/ \
         --set PersistentVolumeClaim.enabled=false \
         --set serviceAccount.name=secret-store",
-        commonFlags: "--set image.port=8000 \
+        commonFlags: "--set image.port=80 \
         --set cron.enabled=false \
         --set service.type=NodePort",
         prodFlags: "--set autoscaling.minReplicas=8 \

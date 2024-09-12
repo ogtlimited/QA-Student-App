@@ -1,7 +1,7 @@
 @Library("ogtl-build@dev") _
 
 Microservice(
-        type: 'php',
+        type: 'ph',
         repo: 'qa-student',
         deployment: 'qa-student',
         image_repository: 'qa-student',

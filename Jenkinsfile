@@ -31,10 +31,10 @@ Microservice(
         --set autoscaling.targetMemoryUtilizationPercentage=80 \
         --set volume.mountPath=/var/www/html/.env \
         --set volume.enabled=true \
-        --set resources.requests.memory=2048Mi \
-        --set resources.requests.cpu=1000m \
-        --set resources.limits.cpu=4000m \
-        --set resources.limits.memory=4000Mi \
+        --set resources.requests.memory=256Mi \
+        --set resources.requests.cpu=250m \
+        --set resources.limits.cpu=500m \
+        --set resources.limits.memory=520Mi \
         --set ingress.enabled=true \
         --set alb.certarn=arn:aws:acm:eu-west-2:651611223190:certificate/93532aae-9193-48fd-9316-6471fb79fc7b \
         --set hostNamePrefix=qastudent \
